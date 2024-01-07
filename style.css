@@ -1,0 +1,239 @@
+.tree__actions {
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  position: sticky;
+  top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.tree__actions .shadow {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tree__actions i {
+  border: 1px solid #ccc;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.tree__actions .find__numbers {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+.tree__actions .find__numbers .total__find {
+  font-weight: bold;
+}
+
+.tree__actions .find__numbers .current__find {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tree__actions #search {
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  /* Optional: Add styles for the placeholder text */
+  /* Optional: Add styles for the focused state */
+}
+
+.tree__actions #search::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.tree__actions #search:-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.tree__actions #search::-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.tree__actions #search::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.tree__actions #search:focus {
+  outline: none;
+  /* Remove default focus outline */
+  border-color: #4caf50;
+  /* Change border color on focus */
+  -webkit-box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+          box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  /* Add a subtle box shadow on focus */
+}
+
+.tree__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  font-size: 15px;
+}
+
+.tree__container .parent__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.tree__container .parent__container .tree__node {
+  position: relative;
+}
+
+.tree__container .parent__container .tree__node::before {
+  content: "";
+  position: absolute;
+  border: 1px dashed rgba(0, 0, 0, 0.4);
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: -15px;
+}
+
+.tree__container .parent__container .tree__node .node__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.tree__container .parent__container .tree__node .node__content .no__highlight__node {
+  background-color: transparent;
+  color: black;
+}
+
+.tree__container .parent__container .tree__node .node__content .highlighted__node {
+  background-color: #ffff99;
+  color: #333;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tree__container .parent__container .tree__node .node__content .toggle__node {
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.tree__container .parent__container .tree__node .node__content .active__toggle__node {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.tree__container .parent__container .tree__node .node__content .inactive__toggle__node {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.tree__container .parent__container .tree__node a {
+  text-decoration: underline;
+  color: black;
+  text-transform: capitalize;
+}
+
+.tree__container .parent__container .no__children__node {
+  position: relative;
+}
+
+.tree__container .parent__container .no__children__node::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed rgba(0, 0, 0, 0.4);
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -15px;
+}
+
+.tree__container .parent__container .children__node::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed rgba(0, 0, 0, 0.4);
+  height: 2px;
+  width: 10px;
+  top: 10px;
+  left: -15px;
+}
+
+.tree__container .parent__container .hide_node {
+  display: none;
+}
+
+.tree__container .parent__container .show_node {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

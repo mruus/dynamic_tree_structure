@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Building</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="tree__actions">
+        <i class="bx bx-collapse"></i>
+        <i class="bx bx-expand"></i>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="(CTRL + F) Type your search..."
+        />
+        <i class="bx bx-chevron-down"></i>
+        <p class="find__numbers">
+          <span class="current__find">0</span> <span>/</span>
+          <span class="total__find">0</span>
+        </p>
+        <i class="bx bx-chevron-up"></i>
+      </div>
+      <!-- Here we will implement a daynamic tree dsign -->
+      <div class="tree__container">
+        <h3>How to become a full stack developer?</h3>
+        <p>
+          Explore the quickest route to achieving full-stack proficiency in the
+          provided tree. Identify the optimal starting point, gain insights into
+          the essential learning components, and grasp the interconnections
+          between different skills and technologies. Delve into a comprehensive
+          understanding of the learning journey, highlighting key aspects that
+          contribute to a well-rounded full-stack expertise.
+        </p>
+      </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="dist/tree.js"></script>
+  </body>
+</html>
