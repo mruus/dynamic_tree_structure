@@ -2,6 +2,10 @@
 
 This project demonstrates the creation and manipulation of a tree-like structure using HTML, CSS, and JavaScript (jQuery). The tree represents a hierarchical view, and the user can search, expand, collapse, and navigate through its nodes.
 
+## Preview the Project
+
+Check out the live preview of the project on GitHub Pages: [Dynamic Tree Structure Preview](https://mruus.github.io/dynamic_tree_structure/)
+
 ## Getting Started
 
 ### Prerequisites
@@ -41,5 +45,6 @@ The tree structure is generated dynamically and can be easily modified by updati
 
 - Bootstrap: [Link to Bootstrap](https://getbootstrap.com/)
 - Boxicons: [Link to Boxicons](https://boxicons.com/)
+
 
 Feel free to explore, modify, and use this project for learning or as a starting point for your own tree-based applications.
